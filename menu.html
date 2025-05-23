@@ -3,10 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu</title>
-     <script src="https://cdn.tailwindcss.com"></script>
+    <title>Menu | BITES</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="font-sans relative bg-black bg-opacity-50 min-h-screen">
     
-</body>
+    <!-- Navigation Bar -->
+    <nav class="bg-black text-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo and Brand Name -->
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="photos/bite__Adobe InDesign.jpeg" alt="BITES Logo" class="h-10 w-auto mr-2">
+                    <span class="text-xl font-bold">BITES</span>
+                </div>
+                
+                
+                                 <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="bite.html" class="px-3 py-2 hover:text-yellow-400 transition">Home</a>
+                    <a href="about.html" class="px-3 py-2 hover:text-yellow-400 transition">About</a>
+                    <a href="services.html" class="px-3 py-2 hover:text-yellow-400 transition">Services</a>
+                    <a href="menu.html" class="px-3 py-2 text-yellow-400 font-bold border-b-2 border-yellow-400">Menu</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="p-2 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 </html>
