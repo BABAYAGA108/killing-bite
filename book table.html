@@ -8,5 +8,65 @@
 </head>
 <body>
     
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="bg-transparent text-gray-800 shadow-md">
+      <div class="max-w-7xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+          <!-- Logo and Brand Name -->
+          <div class="flex-shrink-0 flex items-center">
+            <img src="photos/bite__Adobe InDesign.jpeg" alt="Logo" class="h-auto w-10 mr-2">
+            <span class="text-xl font-bold">BITES</span>
+          </div>
+          
+          <!-- Desktop Menu -->
+          <div class="hidden md:flex space-x-6 items-center">
+            <ul class="flex space-x-6 text-bold extra-bold text-black-600">
+              <li><a href="#" class="py-3 px-2 hover:text-gray-600">home</a></li>
+              <li><a href="about.html" class=" px-4 py-2 hover:text-gray-600">about</a></li>
+              <li><a href="service.html" class="px-4 py-2 hover:text-gray-600">service</a></li>
+              <li><a href="menu.html" class="px-4 py-2 hover:text-gray-600">menu</a></li>
+              
+            </ul>
+          </div>
+          
+          <!-- Mobile menu button -->
+          <div class="md:hidden flex items-center">
+            <button id="mobile-menu-button" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-600 focus:outline-none transition" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <!-- Hamburger icon -->
+              <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M4 6h16M4 12h16M4 18h16 font-weight=extra-bold" />
+              </svg>
+              <!-- Close icon (hidden by default) -->
+              <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Mobile menu (hidden by default) -->
+      <div id="mobile-menu" class="hidden md:hidden px-4 py-4 bg-cover bg-center bg-no-repeat bg-opacity-90 shadow-md ">
+        <ul class="flex flex-col space-y-4 items-center text-bold extra-bold text-black-600">
+          <li>
+            <a href="bite.html" class="block w-full text-center py-3 hover:bg-gray rounded transition">Home</a>
+          </li>
+          <li>
+            <a href="about.html" class="block w-full text-center py-3 hover:bg-black rounded transition">About</a>
+          </li>
+          <li>
+            <a href="service.html" class="block w-full text-center py-3 hover:bg-black rounded transition">Service</a>
+          </li>
+          <li>
+            <a href="menu.html" class="block w-full text-center py-3 hover:bg-black rounded transition">Menu</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
 </body>
 </html>

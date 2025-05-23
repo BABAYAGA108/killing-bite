@@ -79,8 +79,22 @@
                         </a>
                     </li>
                     <li>
+                        <a href="#" data-category="vegetarian" class="menu-tab text-white px-4 py-2 hover:text-yellow-400 font-medium transition">
+                            Vegetarian Dishes
+                        </a>
+                    <li>
                         <a href="#" data-category="foreign" class="menu-tab text-white px-4 py-2 hover:text-yellow-400 font-medium transition">
                             Foreign Dishes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="drinks" class="menu-tab text-white px-4 py-2 hover:text-yellow-400 font-medium transition">
+                            Drinks
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" data-category="desserts" class="menu-tab text-white px-4 py-2 hover:text-yellow-400 font-medium transition">
+                            Desserts
                         </a>
                     </li>
                 </ul>
@@ -88,6 +102,9 @@
             
             <!-- Menu Items Container -->
             <div id="menu-items-container">
+                <button class="add-to-cart bg-yellow-400 text-black px-4 py-2 rounded font-bold hover:bg-yellow-500">
+                    Add to Order
+                </button>
                 <!-- Native Dishes -->
                 <div class="menu-category native">
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -147,7 +164,7 @@
                         </div>
                     </div>
                 </div>
-                    <!-- Custom Order  -->
+                    <!-- Custom Order 3  -->
                             <div class="bg-black bg-opacity-70 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
                                 <div class="flex justify-between items-start mb-4">
                                     <h3 class="text-xl font-bold text-yellow-400">Family Combo</h3>
@@ -157,8 +174,38 @@
                                 <img src="photos/family-enjoying-thanksgiving-day-dinner.jpg" alt="Family Combo" class="w-full h-auto object-cover rounded">
                             </div>
                         </div>
+                    <!-- Vegetarian Dishes -->
+                    <div class="menu-category vegetarian hidden">
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <!-- Vegetarian Item 1 -->
+                            <div class="bg-black bg-opacity-70 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                                <div class="flex justify-between items-start mb-4">
+                                    <h3 class="text-xl font-bold text-yellow-400">Vegetable Jollof</h3>
+                                    <span class="text-yellow-400 font-bold">$10.99</span>
+                                </div>
+                                <p class="text-gray-300 mb-4">Jollof rice with mixed vegetables and plantains</p>
+                                <img src="photos/OIP.jpeg" alt="Vegetable Jollof" class="w-full h-48 object-cover rounded">
+                            </div>
+                            <!-- Vegetarian Item 2 -->
+                            <div class="bg-black bg-opacity-70 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                                <div class="flex justify-between items-start mb-4">
+                                    <h3 class="text-xl font-bold text-yellow-400">Egusi Soup (Veg)</h3>
+                                    <span class="text-yellow-400 font-bold">$12.99</span>
+                                </div>
+                                <p class="text-gray-300 mb-4">Melon seed soup with mushrooms and greens</p>
+                                <img src="photos/Egusi-Soup-IG-1.webp" alt="Vegetarian Egusi" class="w-full h-48 object-cover rounded">
+                            </div>
+                            <!-- Vegetarian Item 3 -->
+                            <div class="bg-black bg-opacity-70 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                                <div class="flex justify-between items-start mb-4">
+                                    <h3 class="text-xl font-bold text-yellow-400">Vegetable Stir Fry</h3>
+                                    <span class="text-yellow-400 font-bold">$11.99</span>
+                                </div>
+                                <p class="text-gray-300 mb-4">Seasonal vegetables with tofu and special sauce</p>
+                                <img src="photos/rice and sauce.jpeg" alt="Vegetable Stir Fry" class="w-full h-48 object-cover rounded">
+                            </div>
+                        </div>
                     </div>
-                    
                 <!-- Foreign Dishes -->
                 <div class="menu-category foreign hidden">
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -185,8 +232,130 @@
                 </div>
             </div>
         </div>
+        <!-- Drinks Section -->
+         <div class="menu-category drinks hidden">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Drink Item 1 -->
+                <div class="bg-black bg-opacity-70 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-yellow-400">Mango Smoothie</h3>
+                        <span class="text-yellow-400 font-bold">$5.99</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Refreshing mango smoothie with yogurt</p>
+                    <img src="photos/magalie-de-preux-ZQAOpiec_JA-unsplash.jpg" alt="Mango Smoothie" class="w-full h-48 object-cover rounded">
+                </div>
+                
+                <!-- Drink Item 2 -->
+                <div class="bg-black bg-opacity-70 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-yellow-400">Lemonade</h3>
+                        <span class="text-yellow-400 font-bold">$3.99</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Freshly squeezed lemonade with mint</p>
+                    <img src="photos/slices-fruits-near-glass-drink-with-ice-herbs-table.jpg" alt="Lemonade" class="w-full h-48 object-cover rounded">
+                </div>
+            </div>
+                <!-- Drink Item 3 -->
+                 <div class="bg-black bg-opacity-70 p-6 rounded-lg hover:scale-105 transition duration-300">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-yellow-400">Fruit Punch</h3>
+                        <span class="text-yellow-400 font-bold">$4.99</span>
+                    </div>
+                    <p class="text-gray-300 mb-4">Tropical fruit punch with a hint of spice</p>
+                    <img src="photos/pablo-carvajal-Orm39aGvElU-unsplash.jpg" alt="Fruit Punch" class="w-full h-auto object-cover rounded">
+                </div>
+            </div>
+            <!--dessert-->
+            <div class="menu-category desserts hidden">
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Dessert Item 1 -->
+                    <div class="bg-black bg-opacity-70 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-yellow-400">Chocolate Cake</h3>
+                            <span class="text-yellow-400 font-bold">$6.99</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">Rich chocolate cake with ganache</p>
+                        <img src="photos/jay-gajjar-lGIXXpeERSM-unsplash.jpg" alt="Chocolate Cake" class="w-full h-48 object-cover rounded">
+                    </div>
+                    
+                    <!-- Dessert Item 2 -->
+                    <div class="bg-black bg-opacity-70 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-yellow-400">Fruit Tart</h3>
+                            <span class="text-yellow-400 font-bold">$5.99</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">Fresh fruit tart with custard filling</p>
+                        <img src="" alt="Fruit Tart" class="w-full h-auto object-cover rounded">
+                    </div>
+                    
+                    <!-- Dessert Item 3 -->
+                    <div class="bg-black bg-opacity-70 p-6 rounded-lg hover:transform hover:scale-105 transition duration-300">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-yellow-400">Cheesecake</h3>
+                            <span class="text-yellow-400 font-bold">$7.99</span>
+                        </div>
+                        <p class="text-gray-300 mb-4">Creamy cheesecake with a graham cracker crust</p>
+                        <img src="photos/sarthak-bhatia-DfuZWsLqpzs-unsplash.jpg" alt="Cheesecake" class="w-full h-auto object-cover rounded">
+                    </div>
+                </div>
+            </div>
+                       <!-- Food Cart Section -->
+    <section class="fixed bottom-0 right-0 z-50 w-full md:w-96 bg-black bg-opacity-90 text-white border-t-2 border-yellow-400 transform transition-transform duration-300 translate-y-full" id="cart-container">
+        <!-- Cart Header -->
+        <div class="flex justify-between items-center p-4 bg-gray-900">
+            <h3 class="text-xl font-bold flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2 text-yellow-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                </svg>
+                Your Order (<span id="cart-count">0</span>)
+            </h3>
+            <button id="close-cart" class="text-gray-400 hover:text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Cart Items -->
+        <div class="h-96 overflow-y-auto p-4" id="cart-items">
+            <!-- Empty Cart Message -->
+            <div id="empty-cart-message" class="text-center py-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+                </svg>
+                <p class="mt-4 text-gray-400">Your cart is empty</p>
+            </div>
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+
+        <!-- Cart Summary -->
+        <div class="border-t border-gray-700 p-4 bg-gray-900">
+            <div class="flex justify-between mb-2">
+                <span>Subtotal:</span>
+                <span id="cart-subtotal">$0.00</span>
+            </div>
+            <div class="flex justify-between mb-4">
+                <span>Delivery Fee:</span>
+                <span id="delivery-fee">$3.99</span>
+            </div>
+            <div class="flex justify-between font-bold text-lg">
+                <span>Total:</span>
+                <span id="cart-total">$3.99</span>
+            </div>
+            <button id="checkout-btn" class="w-full bg-yellow-400 text-black py-3 rounded-lg font-bold hover:bg-yellow-500 mt-4 disabled:opacity-50" disabled>
+                Proceed to Checkout
+            </button>
+        </div>
     </section>
 
+    <!-- Cart Toggle Button -->
+    <button id="cart-toggle" class="fixed bottom-4 right-4 bg-yellow-400 text-black p-3 rounded-full shadow-lg hover:bg-yellow-500 z-40 flex items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
+        </svg>
+        <span class="ml-1 bg-black text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center" id="cart-badge">0</span>
+    </button>
+  
     <!-- Footer Section -->
     <footer class="bg-black text-white py-12 px-4 mt-12">
         <div class="max-w-6xl mx-auto">
@@ -307,6 +476,129 @@
             const menu = document.getElementById('mobile-menu');
             if (menu) menu.classList.toggle('hidden');
         });
+        
+<!-- JavaScript for Cart Functionality -->
+
+    // Cart Data
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+    const cartContainer = document.getElementById('cart-container');
+    const cartToggle = document.getElementById('cart-toggle');
+    const closeCart = document.getElementById('close-cart');
+    const cartItemsContainer = document.getElementById('cart-items');
+    const emptyCartMessage = document.getElementById('empty-cart-message');
+    const cartCount = document.getElementById('cart-count');
+    const cartBadge = document.getElementById('cart-badge');
+    const cartSubtotal = document.getElementById('cart-subtotal');
+    const cartTotal = document.getElementById('cart-total');
+    const checkoutBtn = document.getElementById('checkout-btn');
+
+    // Toggle Cart Visibility
+    cartToggle.addEventListener('click', () => {
+        cartContainer.classList.toggle('translate-y-full');
+        cartContainer.classList.toggle('translate-y-0');
+    });
+
+    closeCart.addEventListener('click', () => {
+        cartContainer.classList.add('translate-y-full');
+        cartContainer.classList.remove('translate-y-0');
+    });
+
+    // Update Cart UI
+    function updateCart() {
+        // Update cart count
+        const itemCount = cart.reduce((total, item) => total + item.quantity, 0);
+        cartCount.textContent = itemCount;
+        cartBadge.textContent = itemCount;
+        
+        // Update cart items
+        cartItemsContainer.innerHTML = '';
+        
+        if (cart.length === 0) {
+            emptyCartMessage.classList.remove('hidden');
+            checkoutBtn.disabled = true;
+        } else {
+            emptyCartMessage.classList.add('hidden');
+            checkoutBtn.disabled = false;
+            
+            cart.forEach(item => {
+                const cartItem = document.createElement('div');
+                cartItem.className = 'flex justify-between items-center py-3 border-b border-gray-700';
+                cartItem.innerHTML = `
+                    <div class="flex-1">
+                        <h4 class="font-medium">${item.name}</h4>
+                        <p class="text-sm text-gray-400">$${item.price.toFixed(2)} × ${item.quantity}</p>
+                    </div>
+                    <div class="flex items-center">
+                        <span class="font-bold mr-4">$${(item.price * item.quantity).toFixed(2)}</span>
+                        <button class="remove-item text-red-400 hover:text-red-300" data-id="${item.id}">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                            </svg>
+                        </button>
+                    </div>
+                `;
+                cartItemsContainer.appendChild(cartItem);
+            });
+        }
+        
+        // Update totals
+        const subtotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+        const deliveryFee = subtotal > 0 ? 3.99 : 0;
+        const total = subtotal + deliveryFee;
+        
+        cartSubtotal.textContent = `$${subtotal.toFixed(2)}`;
+        cartTotal.textContent = `$${total.toFixed(2)}`;
+        
+        // Save to localStorage
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
+    // Remove item from cart
+    cartItemsContainer.addEventListener('click', (e) => {
+        if (e.target.closest('.remove-item')) {
+            const itemId = e.target.closest('.remove-item').getAttribute('data-id');
+            cart = cart.filter(item => item.id !== itemId);
+            updateCart();
+        }
+    });
+
+    // Add to cart functionality (call this when "Add to Order" is clicked)
+    function addToCart(item) {
+        const existingItem = cart.find(cartItem => cartItem.id === item.id);
+        
+        if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            cart.push({
+                id: item.id,
+                name: item.name,
+                price: item.price,
+                quantity: 1
+            });
+        }
+        
+        updateCart();
+        // Show cart when adding an item
+        cartContainer.classList.remove('translate-y-full');
+        cartContainer.classList.add('translate-y-0');
+    }
+
+    // Initialize cart
+    updateCart();
+
+    // Example of how to add items (attach this to your menu items' "Add to Order" buttons)
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+        button.addEventListener('click', function() {
+            const menuItem = this.closest('.menu-item');
+            const item = {
+                id: menuItem.dataset.id,
+                name: menuItem.querySelector('h3').textContent,
+                price: parseFloat(menuItem.querySelector('span').textContent.replace('$', ''))
+            };
+            addToCart(item);
+        });
+    });
+
     </script>
 </body>
 </html>
