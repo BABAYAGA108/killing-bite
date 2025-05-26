@@ -6,6 +6,31 @@
   <title>BITES</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+ <style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .modal-animate {
+            animation: fadeIn 0.3s ease-out;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #f59e0b;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
 <body class="font-sans relative">
   <!-- Background image that covers whole screen -->
   <div class="fixed inset-0 text-bold bg-[url('photos/mixed-roasted-meat-with-onion-pomegranate.jpg')] bg-cover bg-center bg-no-repeat opacity-20 -z-10"></div>
@@ -24,13 +49,13 @@
           <!-- Desktop Menu -->
           <div class="hidden md:flex space-x-6 items-center">
             <ul class="flex space-x-6 text-bold extra-bold text-black-600">
-              <li><a href="#" class="py-3 px-2 hover:text-gray-600">home</a></li>
-              <li><a href="about.html" class=" px-4 py-2 hover:text-gray-600">about</a></li>
-              <li><a href="service.html" class="px-4 py-2 hover:text-gray-600">service</a></li>
-              <li><a href="menu.html" class="px-4 py-2 hover:text-gray-600">menu</a></li>
+              <li><a href="#" class="nav-link py-3 px-2 hover:text-yellow-600 border-b-2 border-yellow-600 font-medium">home</a></li>
+              <li><a href="about.html" class="nav-link px-4 py-2 hover:text-yellow-600">about</a></li>
+              <li><a href="service.html" class="nav-link px-4 py-2 hover:text-yellow-600">service</a></li>
+              <li><a href="menu.html" class="nav-link px-4 py-2 hover:text-yellow-600">menu</a></li>
               <li>
                 <a href="book table.html" class="relative overflow-hidden hover:bg-gray-500 hover:bg-opacity-30 rounded px-2 py-1 transition">
-                  <button type="button" class="rounded-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold px-4 py-2 shadow transition duration-200">Book Table</button>
+                  <button type="button" class="rounded-full bg-yellow-600 hover:bg-yellow-600 text-white font-bold px-4 py-2 shadow transition duration-200">Book Table</button>
                 </a>
               </li>
             </ul>
@@ -53,23 +78,17 @@
         </div>
       </div>
       
-      <!-- Mobile menu (hidden by default) -->
-      <div id="mobile-menu" class="hidden md:hidden px-4 py-4 bg-cover bg-center bg-no-repeat bg-opacity-90 shadow-md ">
-        <ul class="flex flex-col space-y-4 items-center text-bold extra-bold text-black-600">
-          <li>
-            <a href="bite.html" class="block w-full text-center py-3 hover:bg-gray rounded transition">Home</a>
-          </li>
-          <li>
-            <a href="about.html" class="block w-full text-center py-3 hover:bg-black rounded transition">About</a>
-          </li>
-          <li>
-            <a href="service.html" class="block w-full text-center py-3 hover:bg-black rounded transition">Service</a>
-          </li>
-          <li>
-            <a href="menu.html" class="block w-full text-center py-3 hover:bg-black rounded transition">Menu</a>
-          </li>
-          <li>
-            <button type="button" class="w-full py-3 bg-yellow-500 hover:bg-yellow-600 text-white font-bold shadow transition duration-200">Book Table</button>
+       <!-- Mobile menu (hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="bite.html" class="block px-3 py-2 rounded-md text-base font-medium bg-yellow-100 text-gray-900 hover:bg-gray-100">Home</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-100">About</a>
+                <a href="service.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-100">Services</a>
+                <a href="menu.html" class="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-100">Menu</a>
+                <a href="book table.html" class="block px-3 py-2 rounded-md text-base font-medium bg-yellow-500 text-white">Book Table</a>
+            </div>
+        </div>
+            </a>
           </li>
         </ul>
       </div>
