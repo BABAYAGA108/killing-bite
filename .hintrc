@@ -11,6 +11,14 @@
       }
     ],
     "no-inline-styles": "off",
-    "axe/keyboard": "off"
+    "axe/keyboard": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": [
+          "meta[name=theme-color]"
+        ]
+      }
+    ]
   }
 }
