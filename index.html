@@ -140,7 +140,7 @@
   <!-- Background image -->
   <img src="photos/mixed-roasted-meat-with-onion-pomegranate.jpg" 
        alt="Delicious fried chicken meal from BITES" 
-       class="absolute inset-0 w-full h-full object-cover z-0 backdrop-blur-x1" />
+       class="absolute inset-0 w-full h-full object-cover z-0 backdrop-blur-x1 loading-lazy" />
 
   <!-- Content container -->
   <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-36 lg:py-44 z-10">
@@ -181,6 +181,9 @@
   
   <!-- Scrolling indicator -->
   <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-10 animate-bounce">
+    <a href="#footer"  onclick="event.preventDefault(); document.getElementById('footer').scrollIntoView({behavior: 'smooth'})"
+   class="cursor-pointer">
+   <!-- SVG icon here --> 
     <svg class="w-8 h-8 text-yellow-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
     </svg>
@@ -195,7 +198,7 @@
   </section>
   
     <!-- Footer Section -->
-    <footer class="bg-black text-white py-12 px-4 mt-12">
+    <footer id="footer" class="bg-black text-white py-12 px-4 mt-12">
         <div class="max-w-6xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 
